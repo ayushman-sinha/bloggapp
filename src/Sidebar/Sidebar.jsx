@@ -5,9 +5,16 @@ const Sidebar = () => {
   
   return (
     <div className='sidebar'>
+      <div className="sidebarItem">
+        <div className="sidebarTitle">
+          ABOUT ME 
+        </div>
+        </div>
       <div className="sidebarItem">        
-        <img src="https://fakeimg.pl/350x200/ff0000,128/000,255" alt="sidebarImage"></img>
-        
+        <img src="https://fakeimg.pl/350x200/ff0000,128/000,255" alt="sidebarImage"></img>        
+      </div>
+      <div className="sidebarItem">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, accusamus veniam suscipit deserunt tenetur aut dolores </p>
       </div>
       <div className="sidebarItem">
         <div className="sidebarTitle">
@@ -19,6 +26,7 @@ const Sidebar = () => {
           <li className="sideBarListItem">Sports</li>
           <li className="sideBarListItem">Technology</li>
           <li className="sideBarListItem">Media</li>
+          <li className="sideBarListItem">News</li>
         </ul>
       </div>
       <div className="siderbarItem">
