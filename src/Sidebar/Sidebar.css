@@ -3,7 +3,7 @@
     flex:3;
     margin: 20px;
     padding-bottom: 30px;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,9 @@
     font-family: 'Inter', sans-serif;
 }
 .sidebarTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Fredoka', cursive;
     font-weight:600 ;
     line-height: 20px;
@@ -30,7 +33,7 @@
     margin-top: 15px;
 }
 .sidebarItem >p{
-    margin-top: 30px;
+    margin: 30px;
 }
 .sidebarList{
     list-style: none;
@@ -48,4 +51,10 @@
     align-items:center;
     justify-content: center;
     margin-top: 15px;
+   
+}
+.sidebarIcon{
+    cursor: pointer;
+    flex-direction: column;
+    padding: 10px;
 }

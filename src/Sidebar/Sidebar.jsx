@@ -34,9 +34,9 @@ const Sidebar = () => {
           FOLLOW US
         </div>
         <div className="sidebarSocial">
-          <Icon icon="bi:facebook" color="black"  width="32" height="32" />
-          <Icon icon="akar-icons:instagram-fill" color="black" width="32" height="32" />
-          <Icon icon="akar-icons:twitter-fill" color="black" width="32" height="32" />
+          <Icon className='sidebarIcon' icon="bi:facebook" color="black"  width="32" height="32" />
+          <Icon className='sidebarIcon' icon="akar-icons:instagram-fill" color="black" width="32" height="32" />
+          <Icon className='sidebarIcon' icon="akar-icons:twitter-fill" color="black" width="32" height="32" />
         </div>
       </div>
     </div>
