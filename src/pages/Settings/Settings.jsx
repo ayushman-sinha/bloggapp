@@ -10,12 +10,12 @@ const Settings = () => {
                 <div className="settingsUpdateTitle">Update your Account</div>
                 <div className="settingsDeleteTitle">Delete Your Account</div>
             </div>
-            <form action="" className="setingsForm">
+            <form action="" className="settingsForm">
                 <label >Profile Picture</label>
                 <div className="settingsProfilePic">
-                    <img className='settingsPPImg' src="https://fakeimg.pl/1000x800/ff0000,128/000,255"></img>
+                    <img className='settingsProfileImg' src="https://fakeimg.pl/1000x800/ff0000,128/000,255"></img>
                     <label htmlFor='fileInput'>
-                        <Icon icon="carbon:user-avatar-filled-alt" width="32" height="32" />
+                        <Icon className='profileIcon' color ='white' icon="carbon:user-avatar-filled-alt" width="48" height="48" />
                     </label>
                     <input type='file' id='fileInput' className='profilePicAttach'></input>
                 </div>
