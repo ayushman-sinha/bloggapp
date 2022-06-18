@@ -1,9 +1,10 @@
 import React from 'react'
 import './NavBar.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 export const NavBar = () => {
-  return (
-    
+  const user=false;
+  return (    
     <div className='top'>
         <div className='topLeft'>
             <Icon icon="bi:facebook" color="black"  width="32" height="32" />
@@ -12,15 +13,23 @@ export const NavBar = () => {
         </div>
         <div className='topMiddle'>
             <ul className="topList">
-              <li>HOME</li>
-              <li>ABOUT</li>
-              <li>CONTACT</li>
-              <li>POST</li>
-              <li>LOGOUT</li>
+              <li><Link to='/'  className='link'>HOME</Link></li>
+              <li><Link to='/' className='link'>ABOUT</Link></li>
+              <li><Link to='/' className='link'>CONTACT</Link></li>
+              <li><Link to='/write' className='link'>POST</Link></li>
+              <li>{user?"LOGOUT":""}</li>
             </ul>
         </div>
         <div className='topRight'>
-          <img class='profilePic' src="https://fakeimg.pl/300/"></img>
+          {user? (<img class='profilePic' src="https://fakeimg.pl/300/"></img>):
+                 (
+                  <ul className='topList navEditRight'>
+                    <li ><Link to='/login' className='link'>LOGIN</Link></li>
+                    <li><Link to='/register' className='link'>REGISTER</Link></li>                    
+                  </ul>
+                 )
+
+          }
           <Icon icon="fa:search" color="black" width="22" height="22" />    
         </div>
 
