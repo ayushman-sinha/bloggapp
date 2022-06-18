@@ -9,19 +9,19 @@ const Login = () => {
             <div className="heading">
                 Register
             </div>            
-            <div className="headingLogin">
+            <div className="registerLogin">
                 <div classname="headLabel">
                     Email
                 </div>
                 <input type='email' placeholder='Enter Email'></input>
             </div>
-            <div className="headingLogin">
+            <div className="registerLogin">
                 <div classname="headLabel">
                     Password
                 </div>
                 <input type='password' placeholder='Enter Password'></input>
             </div>
-            <div className="headingLogin">
+            <div className="registerLogin">
                 <div classname="headLabel">
                     Confirm Password
                 </div>
