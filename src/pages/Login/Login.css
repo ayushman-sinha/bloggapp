@@ -1,6 +1,6 @@
 body{
     min-height: 100vh;
-    overflow: hidden;
+    
 
 }
 .loginForm{
@@ -14,14 +14,14 @@ body{
 }
 .headingLogin{
     font-family: 'Raleway', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-weight: 400;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    gap: 10px;
-    margin-bottom: 20px;
+    
+    margin-bottom: -1px;
     cursor: pointer;
     color: white;
 }
@@ -52,6 +52,20 @@ body{
 .backgroundEdit{
     position: absolute;
     z-index: -3;
+}
+.heading{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    gap: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: white;
 }
 /* width */
 ::-webkit-scrollbar {

@@ -5,7 +5,10 @@ const Login = () => {
   return (
     <div className='login'>
          <img className='backgroundEdit' src={background} />
-        <form  className="loginForm">            
+        <form  className="loginForm">
+            <div className="heading">
+                Register
+            </div>            
             <div className="headingLogin">
                 <div classname="headLabel">
                     Email
