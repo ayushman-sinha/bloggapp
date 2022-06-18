@@ -24,8 +24,7 @@ function App() {
           <Route exact path='/register' element={user?<Home/>:< Register/>}></Route>
           <Route exact path='/write' element={!user?<Home/>:<Write/>}></Route>
           <Route exact path='/settings' element={!user?<Home/>:<Settings/>}></Route>
-          <Route exact path='/post/:postId' element={<Single/>}></Route>
-          
+          <Route exact path='/post/:postId' element={<Single/>}></Route>          
       </Routes>
    </BrowserRouter>
   );
