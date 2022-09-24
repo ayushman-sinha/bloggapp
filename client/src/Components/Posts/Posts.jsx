@@ -1,15 +1,14 @@
 import React from 'react'
 import './Posts.css'
 import Post from '../Post/Post'
-
-const Posts = () => {
+import {Link} from 'react-router-dom'
+const Posts = ({posts}) => {
   return (
     <div className='Posts'>
-      <Post></Post>
-      <Post></Post>
-      <Post></Post>
-      <Post></Post>
-      <Post></Post>
+      {posts.map((p) => (
+        <Post post={p}></Post>
+      ))}
+     
     </div>
   )
 }
