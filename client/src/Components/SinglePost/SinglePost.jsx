@@ -3,6 +3,7 @@ import { Icon } from '@iconify/react';
 import {useLocation} from 'react-router-dom'
 import { useEffect,useState } from 'react';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 const SinglePost = () => {
   const [post, setPost] = useState([]);
   const location=useLocation().pathname.split('/')[2]
@@ -30,7 +31,9 @@ const SinglePost = () => {
             <div className="singlePostInfo">
               <div className="singlePostAuthor">
                 Author : &nbsp;
-                {post.username}
+                <Link to={`/?username=${post.username}`} className='link'>                  
+                  {post.username}
+                </Link>
               </div>
               <div className="singlePostDate">
                 {date1}
