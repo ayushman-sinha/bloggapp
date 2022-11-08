@@ -2,8 +2,14 @@ import React from 'react'
 import './NavBar.css'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../context/Context';
+import { useContext } from 'react';
 export const NavBar = () => {
-  const user=false;
+  const {user}=useContext(AuthContext);
+  const handleLogout=()=>{   
+    localStorage.removeItem("user");
+    window.location.replace("/login");
+  }
   return (    
     <div className='top'>
         <div className='topLeft'>
@@ -16,12 +22,12 @@ export const NavBar = () => {
               <li><Link to='/'  className='link'>HOME</Link></li>
               <li><Link to='/' className='link'>ABOUT</Link></li>
               <li><Link to='/' className='link'>CONTACT</Link></li>
-              <li><Link to='/write' className='link'>POST</Link></li>
-              <li>{user?"LOGOUT":""}</li>
+              <li><Link to='/write' className='link'>{user?"POST":""}</Link></li>
+              <li className='logoutButton' onClick={handleLogout}>{user?"LOGOUT":""}</li>
             </ul>
         </div>
         <div className='topRight'>
-          {user? (<img class='profilePic' src="https://fakeimg.pl/300/"></img>):
+          {user? (<img class='profilePic' src={user.profile_pic}></img>):
                  (
                   <ul className='topList navEditRight'>
                     <li ><Link to='/login' className='link'>LOGIN</Link></li>

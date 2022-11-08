@@ -5,7 +5,8 @@ import Settings from "./pages/Settings/Settings.jsx";
 import Single from "./pages/Single/Single.jsx";
 import Write from "./pages/Write/Write.jsx";
 import Register from "./pages/Register/Register.jsx";
-
+import { useContext } from "react";
+import { AuthContext } from "./context/Context";
 import {
   BrowserRouter,
   Routes,
@@ -14,7 +15,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const user=false;
+  const {user}=useContext(AuthContext);  
   return (
     <BrowserRouter>
       <NavBar/>

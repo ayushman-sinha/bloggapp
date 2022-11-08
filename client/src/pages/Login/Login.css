@@ -44,6 +44,11 @@ body{
     background-color: #000000;
     font-family: 'Inter', sans-serif;    
 }
+.loginButton:disabled:hover{
+    cursor: not-allowed;
+    background-color: rgb(74, 74, 74);
+   
+}
 .loginButton:hover{
     background-color: #280236;
     color: rgb(255, 255, 255);

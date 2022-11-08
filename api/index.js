@@ -9,6 +9,10 @@ const categoryRoute = require('./routes/categories');
 const multer = require('multer');
 dotenv.config();
 app.use(express.json());
+app.get('/cors', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*');
+    res.send({ "msg": "This has CORS enabled 🎈" })
+    })
 
 mongoose.connect(process.env.MONGO_URL, { 
     useNewUrlParser: true,

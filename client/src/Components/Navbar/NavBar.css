@@ -52,3 +52,9 @@
 .navEditRight{
     margin-right: 20px;
 }
+.logoutButton{
+    cursor: pointer;
+}
+.logoutButton:hover{
+    color: rgb(246, 33, 33);
+}
