@@ -27,7 +27,7 @@ export const NavBar = () => {
             </ul>
         </div>
         <div className='topRight'>
-          {user? (<img class='profilePic' src={user.profile_pic}></img>):
+          {user? <Link to='/settings'><img className='profilePic' src={user.profile_pic} alt=''></img></Link>:
                  (
                   <ul className='topList navEditRight'>
                     <li ><Link to='/login' className='link'>LOGIN</Link></li>

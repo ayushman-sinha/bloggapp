@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     },
     profile_pic: {
         type: String,
-        default: ""
+        default: "https://www.pngarts.com/files/10/Default-Profile-Picture-Download-PNG-Image.png"
     }
     
 },{timestamps: true});

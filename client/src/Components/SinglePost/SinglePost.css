@@ -56,3 +56,56 @@
     font-weight: 600;
     color: rgb(0, 0, 0);
 }
+
+.UpdateInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+}
+.updateTitle{
+    font-size: 20px;
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+     color: grey;
+
+}
+
+.updateFormGroup{
+    margin-top: 10px;
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.updateInput{
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+}
+.updateText{
+    font-size:20px;
+    font-family: 'Inter', sans-serif;
+}
+.updateSubmit{
+    position: relative;
+    top:20px;
+    right:50px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.updateButton{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+
+
+
+

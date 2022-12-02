@@ -66,6 +66,7 @@
     border: none;
     border-bottom: 1px solid lightgray;
     font-family: 'Raleway', sans-serif;
+    padding: 8px;
 }
 .settingsSubmit{
     align-self: center;

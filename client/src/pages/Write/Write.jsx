@@ -50,7 +50,7 @@ const Write = () => {
                 <label htmlFor='fileInput'>
                     <Icon className='iconAdd' icon="carbon:add-filled"  width="32" height="32" />
                 </label>
-                <input type='file' id='fileInput' className='inputFileEdit' onChange={(e)=>setFile(e.target.files[0])}></input>
+                <input type='file' id='fileInput' className='inputFileEdit'   onChange={(e)=>setFile(e.target.files[0])}></input>
                 <input type='text'placeholder='Title' className='inputTitle' autoFocus={true} onChange={(e)=>setTitle(e.target.value)}></input>
             </div>
             <div className="writeFormGroup">
