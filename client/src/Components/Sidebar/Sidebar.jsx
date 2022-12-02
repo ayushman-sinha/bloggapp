@@ -10,7 +10,7 @@ const Sidebar = () => {
       const res = await axios.get('/categories')
       const data = await res.data
       setCats(data)
-      console.log(data)
+      //console.log(data)
     }
     fetchCats()
   }, [])

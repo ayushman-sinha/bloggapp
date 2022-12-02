@@ -6,6 +6,7 @@ const authRoute = require('./routes/auth');
 const userRoute = require('./routes/users');
 const postRoute = require('./routes/posts');
 const categoryRoute = require('./routes/categories');
+const path= require('path');
 const multer = require('multer');
 dotenv.config();
 app.use(express.json());
@@ -13,6 +14,8 @@ app.get('/cors', (req, res) => {
     res.set('Access-Control-Allow-Origin', '*');
     res.send({ "msg": "This has CORS enabled 🎈" })
     })
+
+app.use("/images", express.static(path.join(__dirname, "/images"))); 
 
 mongoose.connect(process.env.MONGO_URL, { 
     useNewUrlParser: true,
@@ -29,8 +32,11 @@ const storage = multer.diskStorage({
     }
 });
 const upload = multer({storage:storage});
+
 app.post('/api/upload', upload.single('file'), (req, res) => {
+
     res.status(200).json('Uploaded')
+    
 })
 app.use("/api/auth",authRoute);
 app.use("/api/users",userRoute);
