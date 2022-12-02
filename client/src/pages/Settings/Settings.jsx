@@ -40,6 +40,7 @@ const Settings = () => {
             updatedUser.image = filename
             try{
                 await axios.post("/upload/",data)
+                console.log("Image uploaded")
                
             }catch(err){
                 console.log(err)
@@ -70,8 +71,9 @@ const Settings = () => {
                         {file?<img  src={URL.createObjectURL(file)} className='settingsProfileImg' alt='profile pic'></img>:<img src={user.profile_pic} className='settingsProfileImg' alt='profile pic'></img>}
                         <label htmlFor='fileInput'>
                             <Icon className='profileIcon' color ='white' icon="carbon:user-avatar-filled-alt" width="48" height="48" />
+                            <input type='file' id='fileInput' className='profilePicAttach' onChange={(e)=>setFile(e.target.files[0])} ></input>
                         </label>
-                        <input type='file' id='fileInput' className='profilePicAttach' onChange={(e)=>setFile(e.target.files[0])} ></input>
+                       
                     </div>
                     <label>Username</label>
                     <input type='text' placeholder={user.username} onChange={(e)=>setUserName(e.target.value)}></input>
